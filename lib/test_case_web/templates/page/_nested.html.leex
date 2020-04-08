@@ -7,7 +7,12 @@
 <% else %>
   <div>
     <%= if @loading do %>
-      <%= render "_logo.html" %>
+      <div id="this-is-a-problem">
+        <p>NOW</p>
+      </div>
+      <div id="this-is-a-problem">
+        <p>LOADING</p>
+      </div>
     <% end %>
   </div>
 <% end %>
