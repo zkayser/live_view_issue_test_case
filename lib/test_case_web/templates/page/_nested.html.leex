@@ -1,0 +1,13 @@
+<%= if not Enum.empty?(@data) do %>
+  <div>
+  <%= for number <- @data do %>
+    Here is some data: <%= number %>
+  <% end %>
+  </div>
+<% else %>
+  <div>
+    <%= if @loading do %>
+      <%= render "_logo.html" %>
+    <% end %>
+  </div>
+<% end %>
